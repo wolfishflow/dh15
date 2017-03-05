@@ -1,4 +1,4 @@
-package asimon.thunderchickens.fragment;
+package asimon.thunderchickens.fragment.problem;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -10,18 +10,17 @@ import org.androidannotations.annotations.EFragment;
 import asimon.thunderchickens.R;
 
 /**
- * Created by alansimon on 2017-03-04.
+ * Created by alansimon on 2017-03-05.
  */
 @EFragment(R.layout.fragment_report)
-public class ProfileFragment extends Fragment{
+public class ProblemFragment extends Fragment{
 
-    private final String TAG = "Profile Fragment";
+    private final String TAG = "Problem Fragment";
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Log.d(TAG, TAG);
     }
-
 
 }

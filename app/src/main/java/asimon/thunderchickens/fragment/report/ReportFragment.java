@@ -36,11 +36,11 @@ public class ReportFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Log.d(TAG, TAG);
-
-        items = new ArrayList<>();
-        items.add(new DividerItem());
-        rvReport.setHasFixedSize(true);
-        rvReport.setLayoutManager(new LinearLayoutManager(getContext()));
+//
+//        items = new ArrayList<>();
+//        items.add(new DividerItem());
+//        rvReport.setHasFixedSize(true);
+//        rvReport.setLayoutManager(new LinearLayoutManager(getContext()));
         //headerRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(), R.drawable.divider_decoration));
     }
 

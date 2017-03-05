@@ -13,8 +13,7 @@ import com.roughike.bottombar.OnTabSelectListener;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
-import asimon.thunderchickens.fragment.ProblemFragment_;
-import asimon.thunderchickens.fragment.ProfileFragment_;
+import asimon.thunderchickens.fragment.patient.PatientFragment_;
 import asimon.thunderchickens.fragment.report.ReportFragment_;
 import asimon.thunderchickens.fragment.schedule.ScheduleFragment_;
 
@@ -61,14 +60,15 @@ public class MainActivity extends AppCompatActivity {
                      ft.commit();
                  } else if (tabId == R.id.tab_problems) {
                      //If problems is selected, head to problems
-                     fr = new ProblemFragment_();
+//                     fr = new ProblemFragment_();
+//                     fr = new CardItemFragment();
                      fm = getFragmentManager();
                      ft = fm.beginTransaction();
                      ft.replace(R.id.frlt_fragment_container_home, fr);
                      ft.commit();
                  } else if (tabId == R.id.tab_patients) {
                      //If patients is selected, head to patients
-                     fr = new ProfileFragment_();
+                     fr = new PatientFragment_();
                      fm = getFragmentManager();
                      ft = fm.beginTransaction();
                      ft.replace(R.id.frlt_fragment_container_home, fr);
@@ -88,6 +88,5 @@ public class MainActivity extends AppCompatActivity {
         ft.commit();
 
     }
-
 
 }
