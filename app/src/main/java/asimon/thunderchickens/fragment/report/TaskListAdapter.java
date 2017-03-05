@@ -32,25 +32,29 @@ public class TaskListAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHold
         TextView mNameView;
         TextView mRoomView;
         TextView mStatus1View;
-        TextView mStatus2View;
+        TextView mPriorityView;
 
         public TaskViewHolder(View itemView) {
             super(itemView);
             mProfileView = (ImageView) itemView.findViewById(R.id.iv_profileIcon);
             mNameView = (TextView) itemView.findViewById(R.id.tv_patientName);
             mRoomView = (TextView) itemView.findViewById(R.id.tv_roomNumber);
+            mPriorityView = (TextView) itemView.findViewById(R.id.tvPriority);
             mStatus1View = (TextView) itemView.findViewById(R.id.tv_textStatus1);
-            mStatus2View = (TextView) itemView.findViewById(R.id.tv_textStatus2);
+
         }
 
         public void bind(TaskItem item) {
+            if (item.mPriority){
+                mPriorityView.setVisibility(View.VISIBLE);
+            }
             mProfileView.setImageResource(item.mImage);
 
             mNameView.setText(item.mName);
             mRoomView.setText(item.mRoom);
 
             mStatus1View.setText(item.mStatus1);
-            mStatus2View.setText(item.mStatus2);
+
         }
     }
 
