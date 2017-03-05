@@ -46,24 +46,28 @@ public class MainActivity extends AppCompatActivity {
              @Override
              public void onTabSelected(@IdRes int tabId) {
                  if (tabId == R.id.tab_home) {
+                     //If home is selected, head to reports
                      fr = new ReportFragment_();
                      fm = getFragmentManager();
                      ft = fm.beginTransaction();
                      ft.replace(R.id.frlt_fragment_container_home, fr);
                      ft.commit();
-                 } else if (tabId == R.id.tab_problems) {
-                     fr = new ProblemFragment_();
-                     fm = getFragmentManager();
-                     ft = fm.beginTransaction();
-                     ft.replace(R.id.frlt_fragment_container_home, fr);
-                     ft.commit();
-                 } else if (tabId == R.id.tab_schedule) {
+                 }  else if (tabId == R.id.tab_schedule) {
+                     //If schedule is selected, head to schedules
                      fr = new ScheduleFragment_();
                      fm = getFragmentManager();
                      ft = fm.beginTransaction();
                      ft.replace(R.id.frlt_fragment_container_home, fr);
                      ft.commit();
+                 } else if (tabId == R.id.tab_problems) {
+                     //If problems is selected, head to problems
+                     fr = new ProblemFragment_();
+                     fm = getFragmentManager();
+                     ft = fm.beginTransaction();
+                     ft.replace(R.id.frlt_fragment_container_home, fr);
+                     ft.commit();
                  } else if (tabId == R.id.tab_patients) {
+                     //If patients is selected, head to patients
                      fr = new ProfileFragment_();
                      fm = getFragmentManager();
                      ft = fm.beginTransaction();
@@ -74,6 +78,14 @@ public class MainActivity extends AppCompatActivity {
          }
 
         );
+
+        //Default to ReportFragment
+
+        Fragment fr = new ReportFragment_();
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.frlt_fragment_container_home, fr);
+        ft.commit();
 
     }
 
