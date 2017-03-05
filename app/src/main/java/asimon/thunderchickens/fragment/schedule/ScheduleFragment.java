@@ -40,6 +40,8 @@ public class ScheduleFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         Log.d(TAG, TAG);
 
+        getActivity().setTitle("Morning Report");
+
         ArrayList<CardItem> listItemList = new ArrayList();
         listItemList.add(new CardItem("Stanley Johnson", "Rm. 321", "Stanley’s birthday today!", "Off-site dinner with son (Brian) at 4:00PM\n"));
         listItemList.add(new CardItem("Lois Mackenzie", "Rm. 324", "Woke up at 4:00. Did not sleep well...", ""));
