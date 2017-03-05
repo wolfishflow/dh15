@@ -12,8 +12,10 @@ public class CardItem {
     String mStatus1;
     String mStatus2;
 
+    int mImage;
 
-    public CardItem(String name, String room, String status1, String status2) {
+    public CardItem(int image, String name, String room, String status1, String status2) {
+        mImage = image;
         mName = name;
         mRoom = room;
         mStatus1 = status1;

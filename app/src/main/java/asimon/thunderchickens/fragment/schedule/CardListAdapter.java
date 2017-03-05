@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -27,6 +28,7 @@ public class CardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
 
     public class CardViewHolder extends RecyclerView.ViewHolder {
+        ImageView mProfileView;
         TextView mNameView;
         TextView mRoomView;
         TextView mStatus1View;
@@ -34,6 +36,7 @@ public class CardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         public CardViewHolder(View itemView) {
             super(itemView);
+            mProfileView = (ImageView) itemView.findViewById(R.id.iv_profileIcon);
             mNameView = (TextView) itemView.findViewById(R.id.tv_patientName);
             mRoomView = (TextView) itemView.findViewById(R.id.tv_roomNumber);
             mStatus1View = (TextView) itemView.findViewById(R.id.tv_textStatus1);
@@ -41,6 +44,8 @@ public class CardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         }
 
         public void bind(asimon.thunderchickens.fragment.schedule.CardItem item) {
+            mProfileView.setImageResource(item.mImage);
+
             mNameView.setText(item.mName);
             mRoomView.setText(item.mRoom);
 

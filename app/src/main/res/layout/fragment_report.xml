@@ -4,11 +4,11 @@
     android:layout_height="match_parent">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_report"
-        android:scrollbars="vertical"
+        android:id="@+id/rvReport"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="60dp">
-    </android.support.v7.widget.RecyclerView>
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:layout_marginBottom="60dp"/>
 
 </RelativeLayout>
