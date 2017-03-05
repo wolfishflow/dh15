@@ -41,9 +41,11 @@ public class ScheduleFragment extends Fragment {
         Log.d(TAG, TAG);
 
         ArrayList<CardItem> listItemList = new ArrayList();
-        listItemList.add(new CardItem("John Scott", "RM 131", "Has a birthday today.", "Family is visiting."));
-        listItemList.add(new CardItem("Bob Scott", "RM 131", "Has a birthday today.", "Family is visiting."));
-        listItemList.add(new CardItem("Larry Scott", "RM 131", "Has a birthday today.", "Family is visiting."));
+        listItemList.add(new CardItem("Stanley Johnson", "Rm. 321", "Stanley’s birthday today!", "Off-site dinner with son (Brian) at 4:00PM\n"));
+        listItemList.add(new CardItem("Lois Mackenzie", "Rm. 324", "Woke up at 4:00. Did not sleep well...", ""));
+        listItemList.add(new CardItem("Walter Brown", "Rm. 327", "Scheduled shower (prefers morning).", ""));
+        listItemList.add(new CardItem("Jorge  Santos", "Rm. 320", "Appointment at 8:30AM with doctor", "Fever of 103 degrees at 5:00AM"));
+        listItemList.add(new CardItem("Kathleen Banks", "Rm. 329", "No updates", ""));
 
         RecyclerView rvSchedule = (RecyclerView) view.findViewById(R.id.rvSchedule);
         rvSchedule.setHasFixedSize(true);

@@ -25,21 +25,30 @@
 
             <ImageView
                 android:id="@+id/iv_profileIcon"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
                 android:layout_width="48dp"
                 android:layout_height="48dp" />
 
             <TextView
                 android:id="@+id/tv_patientName"
+                android:text="Name here"
                 android:textSize="20sp"
+                android:padding="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/iv_profileIcon" />
 
             <TextView
                 android:id="@+id/tv_roomNumber"
+                android:text="Room here"
+                android:padding="3dp"
                 android:textSize="15sp"
                 android:textColor="#d0b196"
                 android:layout_width="wrap_content"
+                android:layout_alignTop="@+id/tv_patientName"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="textEnd"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_patientName" />
 
@@ -51,6 +60,8 @@
 
             <TextView
                 android:id="@+id/tv_textStatus1"
+                android:text="status here"
+                android:padding="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
@@ -68,6 +79,8 @@
             <TextView
                 android:id="@+id/tv_textStatus2"
                 android:layout_width="wrap_content"
+                android:text="status here"
+                android:padding="3dp"
                 android:textSize="15sp"
                 android:textColor="#898989"
                 android:layout_height="wrap_content"
