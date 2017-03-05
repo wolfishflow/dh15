@@ -44,8 +44,7 @@ public class VolleySingleton {
         req.setTag(tag);
         getRequestQueue().add(req);
     }
-
-
+    
     public void cancelPendingRequests(Object tag) {
         if (mRequestQueue != null) {
             mRequestQueue.cancelAll(tag);
