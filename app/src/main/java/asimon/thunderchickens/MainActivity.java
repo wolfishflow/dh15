@@ -15,8 +15,8 @@ import org.androidannotations.annotations.EActivity;
 
 import asimon.thunderchickens.fragment.ProblemFragment_;
 import asimon.thunderchickens.fragment.ProfileFragment_;
-import asimon.thunderchickens.fragment.ReportFragment_;
-import asimon.thunderchickens.fragment.ScheduleFragment_;
+import asimon.thunderchickens.fragment.report.ReportFragment_;
+import asimon.thunderchickens.fragment.schedule.ScheduleFragment_;
 
 /**
  * Created by alansimon on 2017-03-04.

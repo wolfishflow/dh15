@@ -1,4 +1,4 @@
-package asimon.thunderchickens.fragment;
+package asimon.thunderchickens.fragment.schedule;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.View;
 
 import org.androidannotations.annotations.EFragment;
+
+import java.util.ArrayList;
 
 import asimon.thunderchickens.R;
 
@@ -21,6 +23,12 @@ public class ScheduleFragment extends Fragment{
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Log.d(TAG, TAG);
+
+        ArrayList<ListItem> listItemList = new ArrayList();
+        listItemList.add(new ListItem("Example 1"));
+        listItemList.add(new ListItem("Example 2"));
+        listItemList.add(new ListItem("Example 3"));
+        ListAdapter mAdapter = new ListAdapter(getActivity(), listItemList);
     }
 
 }

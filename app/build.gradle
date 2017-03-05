@@ -61,3 +61,6 @@ dependencies {
     compile 'com.roughike:bottom-bar:2.1.1'
 
 }
+dependencies {
+    compile 'com.android.support:recyclerview-v7:25.+'
+}
