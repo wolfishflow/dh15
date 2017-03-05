@@ -7,11 +7,8 @@ import org.androidannotations.annotations.EFragment;
 import asimon.thunderchickens.R;
 
 /**
- * Created by alansimon on 2017-03-04.
+ * Created by alansimon on 2017-03-05.
  */
 @EFragment(R.layout.fragment_report)
-public class ReportFragment extends Fragment{
-
-    private final String TAG = "Report Fragment";
-
+public class ProblemFragment extends Fragment{
 }

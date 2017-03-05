@@ -1,5 +1,6 @@
 package asimon.thunderchickens;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -31,6 +32,9 @@ public class LoginActivity extends AppCompatActivity {
                 // Play some music...
                 Toast.makeText(LoginActivity.this, "heloo", Toast.LENGTH_SHORT).show();
                 Log.d("Help", "help");
+                Intent intent = new Intent(LoginActivity.this, MainActivity_.class);
+                startActivity(intent);
+                finish();
             }
         });
 

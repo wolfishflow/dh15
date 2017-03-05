@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/ic_home_white_24px"
+        id="@+id/tab_home"
+        title="Home" />
+    <tab
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/ic_list_white_24px"
+        id="@+id/tab_schedule"
+        title="Schedule" />
+    <tab
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/ic_edit_white_24px"
+        id="@+id/tab_problems"
+        title="Problems" />
+    <tab
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/ic_group_white_24px"
+        id="@+id/tab_patients"
+        title="Patients" />
+</tabs>

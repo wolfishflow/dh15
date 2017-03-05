@@ -6,5 +6,7 @@
 
 
     <color name="btnColor1">#A57278</color>
+    <color name="md_white_1000">#FFFFFF</color>
+
 
 </resources>
