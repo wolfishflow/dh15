@@ -46,22 +46,20 @@ public class MainActivity extends AppCompatActivity {
              public void onTabSelected(@IdRes int tabId) {
                  if (tabId == R.id.tab_home) {
                      //If home is selected, head to reports
-                     fr = new ReportFragment_();
+                     fr = new ScheduleFragment_();
                      fm = getFragmentManager();
                      ft = fm.beginTransaction();
                      ft.replace(R.id.frlt_fragment_container_home, fr);
                      ft.commit();
                  }  else if (tabId == R.id.tab_schedule) {
                      //If schedule is selected, head to schedules
-                     fr = new ScheduleFragment_();
+                     fr = new ReportFragment_();
                      fm = getFragmentManager();
                      ft = fm.beginTransaction();
                      ft.replace(R.id.frlt_fragment_container_home, fr);
                      ft.commit();
                  } else if (tabId == R.id.tab_problems) {
                      //If problems is selected, head to problems
-//                     fr = new ProblemFragment_();
-//                     fr = new CardItemFragment();
                      fm = getFragmentManager();
                      ft = fm.beginTransaction();
                      ft.replace(R.id.frlt_fragment_container_home, fr);
@@ -81,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Default to ReportFragment
 
-        Fragment fr = new ReportFragment_();
+        Fragment fr = new ScheduleFragment_();
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.frlt_fragment_container_home, fr);

@@ -19,5 +19,5 @@
         barColorWhenSelected="@color/colorPrimary"
         icon="@drawable/ic_group_white_24px"
         id="@+id/tab_patients"
-        title="Patients" />
+        title="Residents" />
 </tabs>

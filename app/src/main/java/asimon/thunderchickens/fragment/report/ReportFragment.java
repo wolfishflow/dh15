@@ -37,8 +37,7 @@ public class ReportFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         Log.d(TAG, TAG);
 
-        getActivity().setTitle("Morning Report");
-
+        getActivity().setTitle("Scheduled Activites");
 
         ArrayList<TaskItem> taskItems = new ArrayList();
 
@@ -52,7 +51,6 @@ public class ReportFragment extends Fragment {
         rvReport.setHasFixedSize(true);
         rvReport.setLayoutManager(new LinearLayoutManager(getContext()));
         rvReport.setAdapter(new TaskListAdapter(getActivity(), taskItems));
-
 
     }
 

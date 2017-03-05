@@ -36,11 +36,11 @@ public class TaskListAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHold
 
         public TaskViewHolder(View itemView) {
             super(itemView);
-            mProfileView = (ImageView) itemView.findViewById(R.id.iv_profileIcon);
+            mProfileView = (ImageView) itemView.findViewById(R.id.iv_profileIcon2);
             mNameView = (TextView) itemView.findViewById(R.id.tv_patientName);
             mRoomView = (TextView) itemView.findViewById(R.id.tv_roomNumber);
             mPriorityView = (TextView) itemView.findViewById(R.id.tvPriority);
-            mStatus1View = (TextView) itemView.findViewById(R.id.tv_textStatus1);
+            mStatus1View = (TextView) itemView.findViewById(R.id.tv_insight);
 
         }
 
@@ -60,7 +60,7 @@ public class TaskListAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHold
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_item, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_card_tasks, parent, false);
         return new TaskViewHolder(v);
     }
 

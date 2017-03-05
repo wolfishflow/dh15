@@ -26,31 +26,31 @@
             <ImageView
                 android:id="@+id/iv_profileIcon"
                 android:layout_width="72dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="72dp"
                 android:layout_marginRight="15dp"
-                android:layout_height="72dp" />
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:id="@+id/tv_patientName"
-                android:text="Name here"
-                android:textSize="18sp"
-                android:padding="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/iv_profileIcon" />
+                android:layout_toRightOf="@id/iv_profileIcon"
+                android:padding="3dp"
+                android:text="Name here"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_roomNumber"
-                android:text="Room here"
-                android:padding="3dp"
-                android:textSize="14sp"
-                android:textColor="#d0b196"
                 android:layout_width="wrap_content"
-                android:layout_alignTop="@+id/tv_patientName"
-                android:layout_alignParentEnd="true"
-                android:textAlignment="textEnd"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_patientName" />
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/tv_patientName"
+                android:layout_toRightOf="@id/tv_patientName"
+                android:padding="3dp"
+                android:text="Room here"
+                android:textAlignment="textEnd"
+                android:textColor="#d0b196"
+                android:textSize="14sp" />
 
             <ImageView
                 android:id="@+id/iv_iconStatus1"
@@ -60,32 +60,32 @@
 
             <TextView
                 android:id="@+id/tv_textStatus1"
-                android:text="status here"
-                android:padding="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:layout_below="@id/tv_patientName"
+                android:layout_toRightOf="@id/iv_profileIcon"
+                android:padding="3dp"
+                android:text="status here"
                 android:textColor="#898989"
-                android:layout_below="@+id/tv_patientName"
-                android:layout_toRightOf="@+id/iv_profileIcon" />
+                android:textSize="14sp" />
 
             <ImageView
                 android:id="@+id/iv_iconStatus2"
                 android:layout_width="24px"
                 android:layout_height="24px"
-                android:layout_below="@+id/tv_textStatus1"
-                android:layout_toRightOf="@+id/iv_profileIcon" />
+                android:layout_below="@id/tv_textStatus1"
+                android:layout_toRightOf="@id/iv_profileIcon" />
 
             <TextView
                 android:id="@+id/tv_textStatus2"
                 android:layout_width="wrap_content"
-                android:text="status here"
-                android:padding="3dp"
-                android:textSize="14sp"
-                android:textColor="#898989"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_textStatus1"
-                android:layout_toRightOf="@+id/iv_profileIcon" />
+                android:layout_below="@id/tv_textStatus1"
+                android:layout_toRightOf="@id/iv_profileIcon"
+                android:padding="3dp"
+                android:text="status here"
+                android:textColor="#898989"
+                android:textSize="14sp" />
 
         </RelativeLayout>
 
