@@ -1,4 +1,4 @@
-package asimon.thunderchickens.fragment.schedule;
+package asimon.thunderchickens.fragment.report;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -16,25 +16,25 @@ import asimon.thunderchickens.R;
  * Created by alansimon on 2017-03-05.
  */
 
-public class CardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class TaskListAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private List<CardItem> mItems;
+    private List<TaskItem> mItems;
     private Activity mActivity;
 
-    public CardListAdapter(Activity activity, List<CardItem> items) {
+    public TaskListAdapter(Activity activity, List<TaskItem> items) {
         mItems = items;
         mActivity = activity;
     }
 
 
-    public class CardViewHolder extends RecyclerView.ViewHolder {
+    public class TaskViewHolder extends RecyclerView.ViewHolder {
         ImageView mProfileView;
         TextView mNameView;
         TextView mRoomView;
         TextView mStatus1View;
         TextView mStatus2View;
 
-        public CardViewHolder(View itemView) {
+        public TaskViewHolder(View itemView) {
             super(itemView);
             mProfileView = (ImageView) itemView.findViewById(R.id.iv_profileIcon);
             mNameView = (TextView) itemView.findViewById(R.id.tv_patientName);
@@ -43,7 +43,7 @@ public class CardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             mStatus2View = (TextView) itemView.findViewById(R.id.tv_textStatus2);
         }
 
-        public void bind(asimon.thunderchickens.fragment.schedule.CardItem item) {
+        public void bind(TaskItem item) {
             mProfileView.setImageResource(item.mImage);
 
             mNameView.setText(item.mName);
@@ -57,18 +57,16 @@ public class CardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_item, parent, false);
-        return new CardViewHolder(v);
+        return new TaskViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
-        ((CardViewHolder) viewHolder).bind((CardItem) mItems.get(position));
+        ((TaskViewHolder) viewHolder).bind(mItems.get(position));
     }
 
     @Override
     public int getItemCount() {
         return mItems.size();
     }
-
-
 }
