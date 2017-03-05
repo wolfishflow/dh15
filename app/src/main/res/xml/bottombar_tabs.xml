@@ -4,20 +4,28 @@
         barColorWhenSelected="@color/colorPrimary"
         icon="@drawable/ic_home_white_24px"
         id="@+id/tab_home"
+        inActiveColor="#444444"
         title="Home" />
+
     <tab
         barColorWhenSelected="@color/colorPrimary"
         icon="@drawable/ic_list_white_24px"
         id="@+id/tab_schedule"
+        inActiveColor="#444444"
         title="Schedule" />
+
     <tab
         barColorWhenSelected="@color/colorPrimary"
         icon="@drawable/ic_edit_white_24px"
         id="@+id/tab_problems"
+        inActiveColor="#444444"
         title="Problems" />
+
     <tab
         barColorWhenSelected="@color/colorPrimary"
         icon="@drawable/ic_group_white_24px"
         id="@+id/tab_patients"
+        inActiveColor="#444444"
         title="Residents" />
+
 </tabs>
