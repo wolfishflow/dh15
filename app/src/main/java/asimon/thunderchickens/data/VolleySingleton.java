@@ -9,6 +9,8 @@ import com.android.volley.toolbox.Volley;
 
 /**
  * Created by alansimon on 2017-03-05.
+ * Derived from https://www.androidtutorialpoint.com/networking/android-volley-tutorial/
+ * No need to use an image loader, picasso is better.
  */
 
 public class VolleySingleton {
