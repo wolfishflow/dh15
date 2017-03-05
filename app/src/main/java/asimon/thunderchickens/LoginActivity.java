@@ -15,8 +15,8 @@ import butterknife.OnClick;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private final String TAG = "Login Activity";
     private Button btnLogin;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
