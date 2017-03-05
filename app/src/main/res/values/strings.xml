@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">ThunderChickens</string>
+    <string name="app_name">Insightflow</string>
+    <string name="btn_login">Login</string>
+    <string name="hint_loginID">Login Id</string>
+    <string name="hint_password">Password</string>
 </resources>
