@@ -1,4 +1,4 @@
-package asimon.thunderchickens.fragment.report.sub;
+package asimon.thunderchickens.fragment.report;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -13,7 +13,6 @@ import net.cachapa.expandablelayout.ExpandableLayout;
 import java.util.List;
 
 import asimon.thunderchickens.R;
-import asimon.thunderchickens.fragment.report.TaskItem;
 
 /**
  * Created by alansimon on 2017-03-05.
@@ -25,29 +24,16 @@ public class ResidentExpandAdapter extends RecyclerView.Adapter<ResidentExpandAd
     private RecyclerView recyclerView;
     private int selectedItem = UNSELECTED;
 
-    private List<TaskItem> mItems;
+    private List<ResidentItem> mItems;
     private Activity mActivity;
 
-    public ResidentExpandAdapter(RecyclerView recyclerView) {
-        this.recyclerView = recyclerView;
+    public ResidentExpandAdapter(Activity activity, List<ResidentItem> items, RecyclerView rv) {
+        mItems = items;
+        mActivity = activity;
+        recyclerView = rv;
+
     }
 
-    @Override
-    public ResidentExpandAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.recycler_item, parent, false);
-        return new ViewHolder(itemView);
-    }
-
-    @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.bind(position);
-    }
-
-    @Override
-    public int getItemCount() {
-        return mItems.size();
-    }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
@@ -65,10 +51,9 @@ public class ResidentExpandAdapter extends RecyclerView.Adapter<ResidentExpandAd
             expandButton.setOnClickListener(this);
         }
 
-        public void bind(int position) {
-            this.position = position;
+        public void bind(ResidentItem item) {
 
-            expandButton.setText(position + ". Tap to expand");
+            expandButton.setText(item.mPItem1);
 
             expandButton.setSelected(false);
             expandableLayout.collapse(false);
@@ -91,4 +76,22 @@ public class ResidentExpandAdapter extends RecyclerView.Adapter<ResidentExpandAd
             }
         }
     }
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.recycler_item, parent, false);
+        return new ViewHolder(itemView);
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        holder.bind(mItems.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return mItems.size();
+    }
+
 }
