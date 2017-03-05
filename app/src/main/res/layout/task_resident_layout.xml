@@ -2,73 +2,90 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/iv_profileIcon3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/lois" />
 
     <TextView
         android:id="@+id/tv_patientName"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_alignTop="@id/iv_profileIcon3"
+        android:layout_toRightOf="@id/iv_profileIcon3"
+        android:text="Lois Mackenzie"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_insight1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_patientName"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@id/iv_profileIcon3"
+        android:text="Early Riser"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/tv_insight2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_insight1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@id/iv_profileIcon3"
+        android:text="Independent Riser"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/tv_insight3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_insight2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@id/iv_profileIcon3"
+        android:text="Eats breakfast in Room 302E"
+        android:textSize="16sp" />
 
     <TextView
+        android:layout_marginTop="10dp"
         android:id="@+id/preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_profileIcon3"
         android:text="Preferences"
-        android:textStyle="bold"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/reportProblem"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textEnd"
+        android:layout_alignBaseline="@id/preferences"
+        android:layout_below="@id/iv_profileIcon3"
+        android:layout_toRightOf="@id/preferences"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Report Problem" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/preferences"></android.support.v7.widget.RecyclerView>
 
-
-    <android.support.v7.widget.CardView
-        android:layout_below="@+id/reportProblem"
-        android:id="@+id/card_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        app:cardUseCompatPadding="true"
-        card_view:cardElevation="4dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
-            android:paddingEnd="16dp"
-            android:paddingStart="16dp"
-            android:paddingTop="16dp">
-
-        </RelativeLayout>
-
-    </android.support.v7.widget.CardView>
-    
 
 </RelativeLayout>
