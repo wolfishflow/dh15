@@ -44,8 +44,8 @@ public class ScheduleFragment extends Fragment {
 
         ArrayList<CardItem> listItemList = new ArrayList();
         listItemList.add(new CardItem(R.drawable.stanley,"Stanley Johnson", "Rm. 321", "Stanley’s birthday today!", "Off-site dinner with son (Brian) at 4:00PM\n"));
-        listItemList.add(new CardItem(R.drawable.lois,"Lois Mackenzie", "Rm. 324", "Woke up at 4:00. Did not sleep well...", ""));
-        listItemList.add(new CardItem(R.drawable.walter,"Walter  xxcvBrown", "Rm. 327", "Scheduled shower (prefers morning).", ""));
+        listItemList.add(new CardItem(R.drawable.lois,"Lois Mackenzie", "Rm. 324", "Woke up at 4:00. Did not sleep well.", ""));
+        listItemList.add(new CardItem(R.drawable.walter,"Walter Brown", "Rm. 327", "Scheduled shower (prefers morning).", ""));
         listItemList.add(new CardItem(R.drawable.jorge,"Jorge  Santos", "Rm. 320", "Appointment at 8:30AM with doctor", "Fever of 103 degrees at 5:00AM"));
         listItemList.add(new CardItem(R.drawable.kathleen,"Kathleen Banks", "Rm. 329", "No updates", ""));
 

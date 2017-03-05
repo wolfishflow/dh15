@@ -41,7 +41,7 @@ public class ReportFragment extends Fragment {
         ArrayList<TaskItem> taskItems = new ArrayList();
 
         taskItems.add(new TaskItem(true, R.drawable.jorge, "Jorge  Santos", "Rm. 320", "Appointment at 8:30AM with doctor"));
-        taskItems.add(new TaskItem(false, R.drawable.kathleen, "Kathleen Banks", "Rm. 329", "No updates"));
+        taskItems.add(new TaskItem(false, R.drawable.kathleen, "Kathleen Banks", "Rm. 329", "Early Riser"));
         taskItems.add(new TaskItem(false, R.drawable.walter, "Walter Brown", "Rm. 327", "Scheduled shower (prefers morning)."));
         taskItems.add(new TaskItem(false, R.drawable.stanley, "Stanley Johnson", "Rm. 321", "Stanley’s birthday today!"));
         taskItems.add(new TaskItem(false, R.drawable.lois, "Lois Mackenzie", "Rm. 324", "Woke up at 4:00. Did not sleep well..."));
