@@ -30,14 +30,14 @@
 
             <TextView
                 android:id="@+id/tv_patientName"
-                android:textSize="11.3sp"
+                android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/iv_profileIcon" />
 
             <TextView
                 android:id="@+id/tv_roomNumber"
-                android:textSize="8.8sp"
+                android:textSize="15sp"
                 android:textColor="#d0b196"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,39 +45,34 @@
 
             <ImageView
                 android:id="@+id/iv_iconStatus1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_patientName"
-                android:layout_toRightOf="@+id/iv_profileIcon"
-                android:visibility="gone" />
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:layout_below="@+id/tv_patientName" />
 
             <TextView
                 android:id="@+id/tv_textStatus1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="8.8sp"
+                android:textSize="15sp"
                 android:textColor="#898989"
                 android:layout_below="@+id/tv_patientName"
-                android:layout_toRightOf="@+id/iv_profileIcon"
-                android:visibility="gone" />
+                android:layout_toRightOf="@+id/iv_profileIcon" />
 
             <ImageView
                 android:id="@+id/iv_iconStatus2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="24px"
+                android:layout_height="24px"
                 android:layout_below="@+id/tv_textStatus1"
-                android:layout_toRightOf="@+id/iv_profileIcon"
-                android:visibility="gone" />
+                android:layout_toRightOf="@+id/iv_profileIcon" />
 
             <TextView
                 android:id="@+id/tv_textStatus2"
                 android:layout_width="wrap_content"
-                android:textSize="8.8sp"
+                android:textSize="15sp"
                 android:textColor="#898989"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_textStatus1"
-                android:layout_toRightOf="@+id/iv_profileIcon"
-                android:visibility="gone" />
+                android:layout_toRightOf="@+id/iv_profileIcon" />
 
         </RelativeLayout>
 

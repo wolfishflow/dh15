@@ -34,12 +34,18 @@ public class CardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         public CardViewHolder(View itemView) {
             super(itemView);
-            mNameView = (TextView) itemView.findViewById(R.id.idcard);
-
+            mNameView = (TextView) itemView.findViewById(R.id.tv_patientName);
+            mRoomView = (TextView) itemView.findViewById(R.id.tv_roomNumber);
+            mStatus1View = (TextView) itemView.findViewById(R.id.tv_textStatus1);
+            mStatus2View = (TextView) itemView.findViewById(R.id.tv_textStatus2);
         }
 
         public void bind(asimon.thunderchickens.fragment.schedule.CardItem item) {
             mNameView.setText(item.mName);
+            mRoomView.setText(item.mRoom);
+
+            mStatus1View.setText(item.mStatus1);
+            mStatus2View.setText(item.mStatus2);
         }
     }
 
