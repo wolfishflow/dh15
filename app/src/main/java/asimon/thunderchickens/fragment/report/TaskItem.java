@@ -13,7 +13,7 @@ public class TaskItem {
 
     Boolean mPriority;
 
-    public TaskItem(Boolean priority,int image, String name, String room, String status1, String status2) {
+    public TaskItem(Boolean priority,int image, String name, String room, String status1) {
         mPriority = priority;
         mImage = image;
         mName = name;

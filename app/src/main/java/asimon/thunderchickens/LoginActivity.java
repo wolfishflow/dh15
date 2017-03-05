@@ -30,13 +30,6 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Play some music...
-                Toast.makeText(LoginActivity.this, "helloo", Toast.LENGTH_SHORT).show();
-                Log.d("Help", "help");
-
-
-
-
 
                 Intent intent = new Intent(LoginActivity.this, MainActivity_.class);
                 startActivity(intent);

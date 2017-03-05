@@ -14,14 +14,17 @@
         android:id="@+id/tv_patientName"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
     <TextView
         android:id="@+id/tv_insight1"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
     <TextView
         android:id="@+id/tv_insight2"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
     <TextView
         android:id="@+id/tv_insight3"
         android:layout_width="match_parent"
@@ -38,6 +41,12 @@
         android:id="@+id/reportProblem"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
 
     <android.support.v7.widget.CardView
         android:layout_below="@+id/reportProblem"
@@ -56,7 +65,7 @@
             android:paddingEnd="16dp"
             android:paddingStart="16dp"
             android:paddingTop="16dp">
-            
+
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
